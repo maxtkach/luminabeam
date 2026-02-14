@@ -352,7 +352,7 @@ header.scrolled {
     background: rgba(18, 18, 18, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    z-index: 1000;
+    z-index: 995;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1064,7 +1064,7 @@ header.scrolled {
 .marquee-content {
     display: flex;
     gap: 60px;
-    animation: marquee 10s linear infinite;
+    animation: marquee 5s linear infinite;
 }
 
 @keyframes marquee {
@@ -1677,7 +1677,7 @@ header.scrolled {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-top: 1px solid var(--glass-border);
-    z-index: 999;
+    z-index: 994;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
     display: none;
 }
@@ -2381,11 +2381,7 @@ header.scrolled {
    RESPONSIVE - ULTRA SMALL
    =================================== */
 
-@media (max-width: 480px) {
 
-/* ===================================
-   RESPONSIVE - ULTRA SMALL
-   =================================== */
 
 @media (max-width: 480px) {
     .hero {
