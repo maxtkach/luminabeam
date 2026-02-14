@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LuminaBeam 7R Pro - професійне сценічне світло для клубів, театрів та event-агентств. 8000 люмен, гарантія 3 роки.">
+    <title>LuminaBeam 7R Pro | Професійне сценічне світло</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-wrapper">
+        <div class="beam-effect beam-1"></div>
+        <div class="beam-effect beam-2"></div>
+        <div class="beam-effect beam-3"></div>
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Lumina</span>
+                <span class="logo-accent">Beam</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Можливості</a></li>
+                <li><a href="#specs">Характеристики</a></li>
+                <li><a href="#trust">Клієнти</a></li>
+                <li><a href="#offer">Пропозиція</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#offer" class="nav-cta">Замовити</a>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Відкрити меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-links">
+                <li><a href="#features" onclick="closeMobileMenu()">Можливості</a></li>
+                <li><a href="#specs" onclick="closeMobileMenu()">Характеристики</a></li>
+                <li><a href="#trust" onclick="closeMobileMenu()">Клієнти</a></li>
+                <li><a href="#faq" onclick="closeMobileMenu()">Питання</a></li>
+                <li><a href="#offer" onclick="closeMobileMenu()">Пропозиція</a></li>
+            </ul>
+            <a href="#offer" class="mobile-menu-cta btn btn-primary" onclick="closeMobileMenu()">
+                <span>Замовити зараз</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">Преміум обладнання</div>
+                <h1>
+                    <span class="hero-title-main">LuminaBeam 7R Pro</span>
+                    <span class="hero-title-sub">Повний контроль над атмосферою вашого шоу</span>
+                </h1>
+                <p class="hero-subtitle">Світловий потік 8000 люмен та ідеальна кольоропередача в компактному корпусі. Гарантія 3 роки.</p>
+                
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <div class="feature-number">01</div>
+                        <span>Beam/Spot/Wash 3-в-1</span>
+                    </div>
+                    <div class="hero-feature">
+                        <div class="feature-number">02</div>
+                        <span>Тиха робота &lt;50 дБ</span>
+                    </div>
+                    <div class="hero-feature">
+                        <div class="feature-number">03</div>
+                        <span>DMX/ArtNet керування</span>
+                    </div>
+                </div>
+
+                <div class="cta-group">
+                    <a href="#offer" class="btn btn-primary">
+                        <span>Замовити зі знижкою</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#specs" class="btn btn-secondary">
+                        <span>Дізнатися більше</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="product-showcase">
+                    <img src="https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=800&h=800&fit=crop" alt="LuminaBeam 7R Pro" class="product-image">
+                    <div class="showcase-glow"></div>
+                </div>
+                <div class="floating-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">8000</div>
+                        <div class="stat-label">Люмен</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">230W</div>
+                        <div class="stat-label">Потужність</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">3 роки</div>
+                        <div class="stat-label">Гарантія</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-text">Прокрутіть вниз</div>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section id="problems" class="section-problems">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Вирішуємо реальні проблеми</h2>
+                <p class="section-subtitle">Від головного болю до бездоганного шоу</p>
+            </div>
+
+            <div class="problems-container">
+                <div class="problem-column">
+                    <div class="column-title">Проблеми</div>
+                    <div class="problem-card problem-before" data-index="1">
+                        <div class="problem-number">01</div>
+                        <h3>Тьмяне обладнання</h3>
+                        <p>Світловий потік не пробиває дим, промінь губиться в залі, гості не бачать ефект.</p>
+                    </div>
+                    <div class="problem-card problem-before" data-index="2">
+                        <div class="problem-number">02</div>
+                        <h3>Поломки під час шоу</h3>
+                        <p>Перегрів, вихід з ладу, дорогий ремонт та зіпсований захід.</p>
+                    </div>
+                    <div class="problem-card problem-before" data-index="3">
+                        <div class="problem-number">03</div>
+                        <h3>Шум заважає звуку</h3>
+                        <p>Вентилятори перекривають музику, особливо помітно на концертах та в театрах.</p>
+                    </div>
+                </div>
+
+                <div class="problem-divider">
+                    <svg width="2" height="400" viewBox="0 0 2 400">
+                        <line x1="1" y1="0" x2="1" y2="400" stroke="url(#dividerGradient)" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="dividerGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0" />
+                                <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div class="problem-column">
+                    <div class="column-title">Рішення</div>
+                    <div class="problem-card problem-after" data-index="1">
+                        <div class="problem-number">01</div>
+                        <h3>8000 люмен потужності</h3>
+                        <p>Видимий промінь на відстані до 100 метрів. Пробиває будь-який туман та освітлює найбільші зали.</p>
+                    </div>
+                    <div class="problem-card problem-after" data-index="2">
+                        <div class="problem-number">02</div>
+                        <h3>Надійність 24/7</h3>
+                        <p>Просунута система охолодження, гарантія 3 роки, сервіс у 50 містах Росії.</p>
+                    </div>
+                    <div class="problem-card problem-after" data-index="3">
+                        <div class="problem-number">03</div>
+                        <h3>Тиха робота</h3>
+                        <p>Рівень шуму менше 50 дБ — тихіше розмови. Ідеально для театрів та студій звукозапису.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Характеристики через вигоди</h2>
+                <p class="section-subtitle">Не просто цифри — реальні переваги для вашого бізнесу</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item" data-feature="1">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4L28 16H40L30 24L34 36L24 28L14 36L18 24L8 16H20L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Потужність 230W</h3>
+                    <p>Лампа Philips MSD Platinum 7R забезпечує яскравість, яка "пробиває" навіть найбільші зали.</p>
+                    <div class="feature-benefit">Видимість променя до 100 метрів</div>
+                </div>
+
+                <div class="feature-item" data-feature="2">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
+                            <circle cx="24" cy="24" r="6" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>16.7 млн кольорів</h3>
+                    <p>CMY-змішування + 14 дихроїчних фільтрів. Втілюйте будь-яку творчу ідею без обмежень.</p>
+                    <div class="feature-benefit">Безмежна палітра для будь-якого стилю</div>
+                </div>
+
+                <div class="feature-item" data-feature="3">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M12 24L24 12L36 24M24 12V36" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>3-в-1: Beam/Spot/Wash</h3>
+                    <p>Три режими в одному корпусі. Вузький промінь 2°, середній 15° або заливка 40°.</p>
+                    <div class="feature-benefit">Економія на покупці 3-х приладів</div>
+                </div>
+
+                <div class="feature-item" data-feature="4">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4L44 24L24 44L4 24L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Ротаційна призма</h3>
+                    <p>6-гранна та 8-гранна призми створюють динамічні ефекти та множинні промені.</p>
+                    <div class="feature-benefit">Wow-ефект без додаткових приладів</div>
+                </div>
+
+                <div class="feature-item" data-feature="5">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 20H40M16 12V8M32 12V8M12 28H20M12 32H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>DMX-512 + ArtNet</h3>
+                    <p>Повна інтеграція з будь-яким світловим пультом. 16/20 каналів керування.</p>
+                    <div class="feature-benefit">Сумісність з вашим обладнанням</div>
+                </div>
+
+                <div class="feature-item" data-feature="6">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 16V24L30 30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Швидке налаштування</h3>
+                    <p>Збереження 250 користувацьких програм, авто-позиціонування, режим репетиції.</p>
+                    <div class="feature-benefit">Економія часу на кожному шоу</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">LuminaBeam в дії</h2>
+                <p class="section-subtitle">Подивіться, як наше світло перетворює простір</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&h=600&fit=crop" alt="Клубна інсталяція">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Клубна інсталяція</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=400&h=400&fit=crop" alt="Театральна сцена">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Театральна сцена</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=400&fit=crop" alt="Концертна площадка">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Концертна площадка</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=400&h=400&fit=crop" alt="Corporate event">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Corporate event</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop" alt="Весільний банкет">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Весільний банкет</div>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop" alt="Fashion показ">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Fashion показ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section id="trust" class="section-trust">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Нам довіряють</h2>
+                <p class="section-subtitle">Більше 500 компаній обрали LuminaBeam для своїх проектів</p>
+            </div>
+
+            <div class="clients-marquee">
+                <div class="marquee-content">
+                    <div class="client-logo">ARENA CLUB</div>
+                    <div class="client-logo">BOLSHOI THEATRE</div>
+                    <div class="client-logo">EVENT MASTERS</div>
+                    <div class="client-logo">LIVE SOUND PRO</div>
+                    <div class="client-logo">STAGE TECH</div>
+                    <div class="client-logo">ARENA CLUB</div>
+                    <div class="client-logo">BOLSHOI THEATRE</div>
+                    <div class="client-logo">EVENT MASTERS</div>
+                </div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"Працюємо з LuminaBeam вже 2 роки. За цей час жодного збою. Гості завжди в захваті від світлових шоу. Окупилися за перші 6 місяців."</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://i.pravatar.cc/100?img=12" alt="Олексій Морозов">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Олексій Морозов</div>
+                            <div class="author-role">Власник клубу "Метрополіс", Київ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"Купили 8 штук для театру. Тиха робота — це саме те, що нам було потрібно. Актори більше не скаржаться на шум, а режисер у захваті від можливостей."</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://i.pravatar.cc/100?img=45" alt="Марія Волкова">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Марія Волкова</div>
+                            <div class="author-role">Технічний директор театру "Сучасник"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"Ми — прокатна компанія. Прилади витримують 200+ заходів на рік, транспортування, різні умови. Надійність на висоті."</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://i.pravatar.cc/100?img=33" alt="Дмитро Соколов">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Дмитро Соколов</div>
+                            <div class="author-role">Директор "EventTech Pro", Одеса</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trust-stats">
+                <div class="trust-stat">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-description">Задоволених клієнтів</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="stat-number">3 роки</div>
+                    <div class="stat-description">Гарантія</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-description">Техпідтримка</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section id="specs" class="section-specs">
+        <div class="container-narrow">
+            <div class="section-header">
+                <h2 class="section-title">Технічні характеристики</h2>
+                <p class="section-subtitle">Детальні специфікації для технічних спеціалістів</p>
+            </div>
+
+            <div class="specs-accordion">
+                <div class="spec-item">
+                    <div class="spec-header" onclick="toggleSpec(this)">
+                        <h3>Оптична система</h3>
+                        <div class="spec-toggle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="spec-content">
+                        <div class="spec-grid">
+                            <div class="spec-detail">
+                                <div class="spec-label">Лампа</div>
+                                <div class="spec-value">Philips MSD Platinum 7R</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Потужність лампи</div>
+                                <div class="spec-value">230W</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Світловий потік</div>
+                                <div class="spec-value">8000 люмен</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Колірна температура</div>
+                                <div class="spec-value">8000K</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Термін служби лампи</div>
+                                <div class="spec-value">2000 годин</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Кут променя</div>
+                                <div class="spec-value">2° - 40°</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-header" onclick="toggleSpec(this)">
+                        <h3>Колір та ефекти</h3>
+                        <div class="spec-toggle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="spec-content">
+                        <div class="spec-grid">
+                            <div class="spec-detail">
+                                <div class="spec-label">Колірне колесо</div>
+                                <div class="spec-value">14 кольорів + білий</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">CMY-змішування</div>
+                                <div class="spec-value">16.7 млн кольорів</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Гобо</div>
+                                <div class="spec-value">17 статичних + 9 обертових</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Призма</div>
+                                <div class="spec-value">6-гранна + 8-гранна</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Фрост-фільтр</div>
+                                <div class="spec-value">0-100%</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Стробоскоп</div>
+                                <div class="spec-value">1-25 Гц</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-header" onclick="toggleSpec(this)">
+                        <h3>Керування та рух</h3>
+                        <div class="spec-toggle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="spec-content">
+                        <div class="spec-grid">
+                            <div class="spec-detail">
+                                <div class="spec-label">DMX канали</div>
+                                <div class="spec-value">16 / 20 каналів</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Протоколи</div>
+                                <div class="spec-value">DMX-512, ArtNet</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Pan</div>
+                                <div class="spec-value">540° (16bit)</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Tilt</div>
+                                <div class="spec-value">270° (16bit)</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Швидкість руху</div>
+                                <div class="spec-value">0.1 - 2.5 сек</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Дисплей</div>
+                                <div class="spec-value">LCD з сенсорним керуванням</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-header" onclick="toggleSpec(this)">
+                        <h3>Конструкція та живлення</h3>
+                        <div class="spec-toggle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="spec-content">
+                        <div class="spec-grid">
+                            <div class="spec-detail">
+                                <div class="spec-label">Живлення</div>
+                                <div class="spec-value">AC 100-240V, 50/60Hz</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Споживання</div>
+                                <div class="spec-value">350W макс.</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Охолодження</div>
+                                <div class="spec-value">Вентиляторне, &lt;50 дБ</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Вага</div>
+                                <div class="spec-value">16.5 кг</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Габарити</div>
+                                <div class="spec-value">350 x 410 x 500 мм</div>
+                            </div>
+                            <div class="spec-detail">
+                                <div class="spec-label">Клас захисту</div>
+                                <div class="spec-value">IP20 (для приміщень)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-faq">
+        <div class="container-narrow">
+            <div class="section-header">
+                <h2 class="section-title">Часті питання</h2>
+                <p class="section-subtitle">Відповіді на важливі питання перед покупкою</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Чи складно налаштовувати прилад?</h3>
+                        <div class="faq-toggle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ні, LuminaBeam 7R Pro оснащений інтуїтивним сенсорним LCD-дисплеєм з українським меню. Базове налаштування займає 5-10 хвилин. Для складніших програм ми надаємо безкоштовне навчання та технічну підтримку 24/7. Також у комплекті йде детальна інструкція та бібліотека готових програм.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Що якщо прийде бракований товар?</h3>
+                        <div class="faq-toggle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Кожен прилад проходить тестування перед відправкою. Якщо все ж виявиться заводський брак — ми замінимо прилад протягом 14 днів без питань. Гарантія 3 роки покриває всі несправності. Сервісні центри в 50 містах України, середній термін ремонту — 3-5 днів.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Чи є доставка в регіони?</h3>
+                        <div class="faq-toggle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Так, доставляємо по всій Україні. Безкоштовна доставка при замовленні від 200 000 грн. Працюємо з Нова Пошта, Делівері та іншими перевізниками. Середній час доставки — 1-3 дні залежно від регіону. Упаковка — посилений кофр із захистом від ударів.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Чи можна купити в розстрочку?</h3>
+                        <div class="faq-toggle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Так. Для юридичних осіб доступний лізинг від 12 до 36 місяців через наших партнерів. Для фізичних осіб — розстрочка на 6-12 місяців без переплати при замовленні від 4 приладів. Повна передоплата — знижка 5%.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Чи сумісний з моїм світловим пультом?</h3>
+                        <div class="faq-toggle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LuminaBeam працює за стандартними протоколами DMX-512 та ArtNet, тому сумісний з 99% світлових пультів (Avolites, GrandMA, Chamsys, Titan тощо). Бібліотеки профілів для популярних пультів доступні на нашому сайті. Якщо потрібна допомога з інтеграцією — наші інженери допоможуть віддалено.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Який термін окупності для прокатної компанії?</h3>
+                        <div class="faq-toggle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>При середній вартості оренди 3000-5000 грн/добу та завантаженні 8-12 днів на місяць, окупність становить 6-9 місяців. Надійність та низька вартість обслуговування (лампи служать 2000 годин) роблять LuminaBeam одним із найвигідніших вкладень для прокатного бізнесу.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section id="offer" class="section-offer">
+        <div class="container">
+            <div class="offer-card">
+                <div class="offer-badge">Обмежена пропозиція</div>
+                <h2 class="offer-title">Кофри у подарунок при замовленні від 4 штук</h2>
+                <p class="offer-description">Захистіть ваші інвестиції! Flight Case вартістю 15 000 грн у подарунок до кожного приладу. Акція діє до кінця місяця.</p>
+
+                <div class="countdown">
+                    <div class="countdown-block">
+                        <div class="countdown-value" id="days">12</div>
+                        <div class="countdown-label">Днів</div>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-block">
+                        <div class="countdown-value" id="hours">08</div>
+                        <div class="countdown-label">Годин</div>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-block">
+                        <div class="countdown-value" id="minutes">45</div>
+                        <div class="countdown-label">Хвилин</div>
+                    </div>
+                </div>
+
+                <div class="offer-cta">
+                    <a href="#" class="btn btn-primary" onclick="showContactForm(event)">
+                        <span>Замовити зараз</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="btn btn-secondary" onclick="showContactForm(event)">
+                        <span>Отримати КП</span>
+                    </a>
+                </div>
+
+                <div class="offer-bonus">
+                    Бонус: безкоштовне навчання для вашої команди (вартість 25 000 грн)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-text">Lumina</span>
+                        <span class="logo-accent">Beam</span>
+                    </div>
+                    <p class="footer-description">Професійне світлове обладнання для найвимогливіших проектів.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M20 10C20 4.477 15.523 0 10 0S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C7.284 0 6.944.012 5.878.06 4.813.109 4.087.278 3.45.525a4.902 4.902 0 00-1.772 1.153A4.902 4.902 0 00.525 3.45C.278 4.087.109 4.813.06 5.878.012 6.944 0 7.284 0 10s.012 3.056.06 4.122c.049 1.065.218 1.791.465 2.428a4.902 4.902 0 001.153 1.772 4.902 4.902 0 001.772 1.153c.637.247 1.363.416 2.428.465C6.944 19.988 7.284 20 10 20s3.056-.012 4.122-.06c1.065-.049 1.791-.218 2.428-.465a4.902 4.902 0 001.772-1.153 4.902 4.902 0 001.153-1.772c.247-.637.416-1.363.465-2.428.048-1.066.06-1.406.06-4.122s-.012-3.056-.06-4.122c-.049-1.065-.218-1.791-.465-2.428a4.902 4.902 0 00-1.153-1.772A4.902 4.902 0 0016.55.525C15.913.278 15.187.109 14.122.06 13.056.012 12.716 0 10 0zm0 1.802c2.67 0 2.987.01 4.041.059.975.045 1.504.207 1.857.344.467.182.8.398 1.15.748.35.35.566.683.748 1.15.137.353.3.882.344 1.857.048 1.054.059 1.37.059 4.04 0 2.672-.01 2.988-.059 4.042-.045.975-.207 1.504-.344 1.857a3.097 3.097 0 01-.748 1.15c-.35.35-.683.566-1.15.748-.353.137-.882.3-1.857.344-1.054.048-1.37.059-4.041.059-2.67 0-2.987-.01-4.04-.059-.975-.045-1.504-.207-1.857-.344a3.097 3.097 0 01-1.15-.748 3.097 3.097 0 01-.748-1.15c-.137-.353-.3-.882-.344-1.857-.048-1.054-.059-1.37-.059-4.041 0-2.67.01-2.987.059-4.041.045-.975.207-1.504.344-1.857.182-.467.398-.8.748-1.15.35-.35.683-.566 1.15-.748.353-.137.882-.3 1.857-.344 1.054-.048 1.37-.059 4.04-.059z"/>
+                                <path d="M10 13.333a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm0-8.468a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zM16.538 4.662a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M19.615 5.274c-.23-.856-.905-1.532-1.761-1.762C16.302 3 10 3 10 3s-6.302 0-7.854.512c-.856.23-1.532.906-1.761 1.762C0 6.826 0 10 0 10s0 3.174.385 4.726c.229.856.905 1.532 1.761 1.762C3.698 17 10 17 10 17s6.302 0 7.854-.512c.856-.23 1.532-.906 1.761-1.762C20 13.174 20 10 20 10s0-3.174-.385-4.726zM8 13V7l5.196 3L8 13z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm4.895 6.744l-1.488 7.01c-.112.502-.405.626-.82.39l-2.264-1.67-1.092 1.05c-.121.121-.222.222-.456.222l.163-2.315 4.198-3.792c.182-.163-.04-.253-.284-.09L7.793 10.72l-2.24-.7c-.488-.152-.498-.488.101-.723l8.746-3.373c.407-.152.762.09.63.723z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Навігація</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Можливості</a></li>
+                        <li><a href="#specs">Характеристики</a></li>
+                        <li><a href="#trust">Наші клієнти</a></li>
+                        <li><a href="#faq">Питання та відповіді</a></li>
+                        <li><a href="#offer">Спецпропозиція</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Підтримка</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Гарантія та сервіс</a></li>
+                        <li><a href="#">Доставка та оплата</a></li>
+                        <li><a href="#">Документація</a></li>
+                        <li><a href="#">Навчальні відео</a></li>
+                        <li><a href="#">Зв'язатися з нами</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Контакти</h4>
+                    <ul class="footer-contacts">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M14.667 11.28v2a1.333 1.333 0 01-1.454 1.333 13.2 13.2 0 01-5.753-2.046 13.007 13.007 0 01-4-4 13.2 13.2 0 01-2.047-5.78A1.333 1.333 0 012.747 1.333h2A1.333 1.333 0 016.08 2.52c.084.64.24 1.27.466 1.877a1.333 1.333 0 01-.3 1.407L5.413 6.64a10.667 10.667 0 004 4l.833-.833a1.333 1.333 0 011.407-.3c.606.227 1.236.383 1.877.467a1.333 1.333 0 011.187 1.353z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>+380 (44) 123-45-67</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M2.667 2.667h10.666c.734 0 1.334.6 1.334 1.333v8c0 .733-.6 1.333-1.334 1.333H2.667c-.734 0-1.334-.6-1.334-1.333V4c0-.733.6-1.333 1.334-1.333z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.667 4L8 8.667 1.333 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>info@luminabeam.ua</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M14 6.667c0 4.666-6 8.666-6 8.666s-6-4-6-8.666a6 6 0 1112 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 8.667a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Київ, вул. Прикладна, 1</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 4v4l2.667 1.333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span>Пн-Пт: 9:00-21:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 LuminaBeam. Всі права захищені.</p>
+                <div class="footer-legal">
+                    <a href="#">Політика конфіденційності</a>
+                    <a href="#">Публічна оферта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile CTA Bar (Sticky Bottom) -->
+    <div class="mobile-cta-bar">
+        <a href="#offer" class="btn btn-primary">
+            <span>Замовити зі знижкою</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
